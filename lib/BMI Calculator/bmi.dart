@@ -18,6 +18,7 @@ class _HomeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff1d1b20),
       appBar: AppBar(
         title: const Text(
           "BMI Calculator",

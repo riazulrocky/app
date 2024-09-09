@@ -13,6 +13,7 @@ class resultpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff1d1b20),
       appBar: AppBar(
         title: Text(
           "BMI Calculator",
@@ -24,12 +25,14 @@ class resultpage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Text("Result",
-              style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold)),
-          SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Text("Result",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold)),
+          ),
           Container(
             height: 200,
             width: 400,

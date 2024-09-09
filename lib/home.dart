@@ -1,3 +1,4 @@
+import 'package:app/BMI%20Calculator/bmi.dart';
 import 'package:flutter/material.dart';
 class front extends StatelessWidget {
   const front({super.key});
@@ -22,14 +23,21 @@ class front extends StatelessWidget {
             height: 150,
             width: 350,
             child: Text(
-              "Master app development with interactive lessons and hands-on projects. "
-                  "Transform your ideas into reality with expert guidance and real-world "
-                  "practice.",
+              "Quickly check your Body Mass Index by entering your "
+                  "height and weight. Simple, fast, and easy-to-use!",
               style: TextStyle(fontSize: 18, color: Colors.black),
             ),
           ),
+
           ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => home()));
+
+              },
               child: const Text("Continue", style: TextStyle(fontSize: 20))),
         ],
       ),
